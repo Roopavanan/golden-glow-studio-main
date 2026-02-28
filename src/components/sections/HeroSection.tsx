@@ -52,14 +52,37 @@ const HeroSection = () => {
           className="flex flex-col sm:flex-row gap-4 justify-center items-center opacity-0 animate-fade-in-up"
           style={{ animationDelay: "0.8s" }}
         >
-          <Button variant="gold" size="xl" className="min-w-[220px]">
-            <Phone className="w-5 h-5" />
-            Book an Appointment
-          </Button>
-          <Button variant="goldOutline" size="xl" className="min-w-[220px]">
-            <MessageCircle className="w-5 h-5" />
-            WhatsApp Me
-          </Button>
+          <a
+            href="https://wa.me/919566310321"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 min-w-[220px] px-6 py-3
+             bg-gradient-to-r from-[hsl(43,74%,35%)] 
+             via-[hsl(43,74%,49%)] 
+             to-[hsl(43,60%,65%)]
+             text-[hsl(0,0%,4%)] font-semibold tracking-wide
+             rounded-lg transition-all duration-300
+             hover:shadow-[0_0_30px_hsl(43_74%_49%_/_0.4)]
+             hover:scale-[1.02]"
+          >
+            <Phone className="w-5 h-5 shrink-0" />
+            <span>Book an Appointment</span>
+          </a>
+          <a
+            href="https://wa.me/919566310321"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 min-w-[220px] px-6 py-3
+             border-2 border-primary text-primary bg-transparent
+             hover:bg-primary/10
+             hover:shadow-[0_0_25px_hsl(43_74%_49%_/_0.3)]
+             font-semibold tracking-wide
+             rounded-lg transition-all duration-300
+             hover:scale-[1.02] active:scale-[0.98]"
+          >
+            <MessageCircle className="w-5 h-5 shrink-0" />
+            <span>WhatsApp Me</span>
+          </a>
         </div>
 
         {/* Bottom decorative element */}

@@ -61,9 +61,21 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="hero" size="sm">
+            <a
+              href="https://wa.me/919566310321"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center
+             h-9 rounded-md px-3
+             border border-primary/50
+             bg-primary/10 text-primary
+             font-semibold tracking-wider uppercase text-xs
+             transition-all duration-300
+             hover:bg-primary hover:text-primary-foreground
+             hover:shadow-[0_0_40px_hsl(43_74%_49%_/_0.4)]"
+            >
               Book Now
-            </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}

@@ -38,7 +38,16 @@ const Footer = () => {
           <div className="space-y-2 text-sm text-muted-foreground font-body">
             <p>© {currentYear} | Makeup Artist </p>
             <p className="flex items-center justify-center gap-1.5 text-xs">
-              Crafted with <Heart className="w-3 h-3 text-primary fill-primary" /> Rooban
+              Crafted with{" "}
+              <Heart className="w-3 h-3 text-primary fill-primary" />{" "}
+              <a
+                href="https://www.rooban.info"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline hover:text-primary transition-colors duration-200"
+              >
+                Rooban
+              </a>
             </p>
           </div>
         </div>
